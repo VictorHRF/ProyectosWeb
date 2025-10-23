@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #f04299;
+    --secondary-color: #4a90e2;
+    --font-color: #333;
+    --bg-color: #fcfcfc;
+    --font-color: #333;
+    --font-muted: #666;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    width: 90%;
+    max-width: 1024px;
+    margin: 20px auto;
+    border-bottom: 0.5px solid var(--primary-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    padding: 10px 0px;
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+h1 {
+    color: var(--font-color);
+    font-size: 1.5rem;
+    line-height: 1.2;
+    text-wrap: balance;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    svg {
+        color: var(--bg-color);
+        background-color: var(--primary-color);
+        width: 24px;
+        height: 24px;
+        border-radius: 100%;
+    }
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color: var(--font-color);
+        transition: color 0.3s;
+
+        &:hover, &:focus {
+            color: var(--secondary-color);
+            outline: none;
+        }
+    }
+
+}
+
+button {
+    background-color: var(--primary-color);
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 0.5rem;
+}
+
+/* hero */
+
+main {
+    width: 90%;
+    max-width: 1024px;
+    margin: 20px auto;
+
+    & > p {
+        font-size: 1rem;
+        text-align: center;
+        margin: 10px 0;
+        padding: 20px 0;
+    }
+}
+
+main > section:nth-child(1) {
+
+    height: 550px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    h1 {
+        padding-top: 32px;
+        color: white;
+        font-size: 2.5rem;
+    }
+
+    & > img {
+        position: absolute;
+        width: 85%;
+        max-width: 900px;
+        height: 450px;
+        object-fit: cover;
+        z-index: -1;
+        margin: 0 auto;
+        border-radius: 50px;
+        left: 0;
+        right: 0;
+    }
+
+    p {
+        margin: 20px 0;
+        font-size: 1rem;
+    }
+}
+
+main > section:nth-child(3) {
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+
+    button {
+        align-self: center;
+        margin-top: 20px;
+    }
+}
+
+main > section:nth-child(3) > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin: 20px 0;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    height: 100%;
+
+    h3 {
+        font-size: 0.8rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+        color: var(--primary-color)
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+}
+
+footer {
+    width: 90%;
+    max-width: 1024px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    border-top: 0.5px solid var(--primary-color);
+    border-bottom: 0.1px solid var(--primary-color);
+    padding: 10px 0;
+
+    & div {
+        margin: 20px 0 10px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 0.8rem;
+    }
+
+    p {
+        font-size: 0.6rem;
+        color: var(--font-muted);
+    }
+
+    h4 {
+        font-size: 0.8rem;
+    }
+}
+
+footer > div > div {
+    display: flex;
+    flex-direction: row;
+
+    a {
+        color: var(--primary-color);;
+    }
+}
+
+footer > div > form {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    input {
+        border: 0.5px solid var(--primary-color);
+        border-radius: 20px;
+        outline: none;
+        padding: 5px;
+    }
+}
+
+footer + small {
+    text-align: center;
+    font-size: 0.7rem;
+    color: var(--font-muted);
+    margin: 20px 0;
+    padding-bottom: 20px;
+}
