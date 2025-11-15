@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Detalle de Producto</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+     <header>
+        <h1>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-cookie-man"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path stroke="none" d="M0 0h24v24H0z" /><path d="M12 2a5 5 0 0 1 2.845 9.112l.147 .369l1.755 -.803c.969 -.443 2.12 -.032 2.571 .918a1.88 1.88 0 0 1 -.787 2.447l-.148 .076l-2.383 1.089v2.02l1.426 1.425l.114 .125a1.96 1.96 0 0 1 -2.762 2.762l-.125 -.114l-2.079 -2.08l-.114 -.124a2 2 0 0 1 -.161 -.22h-.599q -.071 .114 -.16 .22l-.115 .125l-2.08 2.079a1.96 1.96 0 0 1 -2.886 -2.648l.114 -.125l1.427 -1.426v-2.019l-2.383 -1.09l-.148 -.075a1.88 1.88 0 0 1 -.787 -2.447c.429 -.902 1.489 -1.318 2.424 -.978l.147 .06l1.755 .803l.147 -.369a5 5 0 0 1 -2.15 -3.895v-.217a5 5 0 0 1 5 -5z" /><path d="M12 16h.01" /><path d="M12 13h.01" /><path d="M10 7h.01" /><path d="M14 7h.01" /><path d="M12 9h.01" /></svg>
+            Amigurumis
+        </h1>
+        <div>
+            <nav>
+                <a href="./index.html">Inicio</a>
+                <a href="./tienda.html">Tienda</a>
+                <a href="#">Sobre Nosotros</a>
+                <a href="#">Contacto</a>
+            </nav>
+            <form class="nav-form" action="">
+                <button class="shop-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
+                    Carrito (2)
+                </button>
+                <button class="cart-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                </button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a class="is-active" href="">Inicio</a>
+            <a class="is-active" href="">Tienda</a>
+            <a href="">Carrito</a>
+        </div>
+
+        <header class="cart-header">
+            <h1>Tu Carrito de Compra</h1>
+            <p>Revisa los artículos y procede al pago.</p>
+        </header>
+
+        <div class="cart-content">
+
+            <div class="cart-items">
+                <h2>Articulos</h2>
+                <article class="cart-item">
+                    <img src="./pulpo-1.jpeg" alt="Pulpo de peluche">
+                    <div>
+                        <p>Pulpo de Ganchillo Rosa</p>
+                        <p>$25.00</p>
+                    </div>
+                    <div>
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                </article>
+                <article class="cart-item">
+                    <img src="./elefante.jpeg" alt="Pulpo de peluche">
+                    <div>
+                        <p>Elefante de peluche Gris</p>
+                        <p>$30.00</p>
+                    </div>
+                    <div>
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                </article>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M5 12l6 6" /><path d="M5 12l6 -6" /></svg>
+                    Seguir comprando
+                </a>
+            </div>
+
+            <div class="cart-summary">
+                <h2>Resumen del pedido</h2>
+                <div class="item-cost">
+                    <p>Subtotal</p>
+                    <p>$55.00</p>
+                </div>
+                <div class="item-cost">
+                    <p>Envío</p>
+                    <p>$5.00</p>
+                </div>
+                <div class="item-cost total-cost">
+                    <p>Total</p>
+                    <p>$60.00</p>
+                </div>
+                <p class="discount">Código de descuento</p>
+                <form action="">
+                    <div class="discount-code">
+                        <input type="text" placeholder="Ingresa tu código">
+                        <button>Aplicar</button>
+                    </div>
+                    <button class="pay-button">Proceder al pago</button>
+                </form>
+                <p class="delivery-time">Tiempos de envío estimados 3-5 días laborables.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="cart-footer">
+        <p> &copy; 2025 Amigurumis. Todos los derechos reservados.</p>
+        <div class="politics-links">
+            <a href="">Política de Devoluciones</a>
+            <a href="">Política de Privacidad</a>
+        </div>
+    </footer>
+    
+</body>
+</html>

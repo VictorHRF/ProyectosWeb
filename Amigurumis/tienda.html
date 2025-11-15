@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de amigurumis</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+     <header>
+        <h1>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-cookie-man"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path stroke="none" d="M0 0h24v24H0z" /><path d="M12 2a5 5 0 0 1 2.845 9.112l.147 .369l1.755 -.803c.969 -.443 2.12 -.032 2.571 .918a1.88 1.88 0 0 1 -.787 2.447l-.148 .076l-2.383 1.089v2.02l1.426 1.425l.114 .125a1.96 1.96 0 0 1 -2.762 2.762l-.125 -.114l-2.079 -2.08l-.114 -.124a2 2 0 0 1 -.161 -.22h-.599q -.071 .114 -.16 .22l-.115 .125l-2.08 2.079a1.96 1.96 0 0 1 -2.886 -2.648l.114 -.125l1.427 -1.426v-2.019l-2.383 -1.09l-.148 -.075a1.88 1.88 0 0 1 -.787 -2.447c.429 -.902 1.489 -1.318 2.424 -.978l.147 .06l1.755 .803l.147 -.369a5 5 0 0 1 -2.15 -3.895v-.217a5 5 0 0 1 5 -5z" /><path d="M12 16h.01" /><path d="M12 13h.01" /><path d="M10 7h.01" /><path d="M14 7h.01" /><path d="M12 9h.01" /></svg>
+            Amigurumis
+        </h1>
+        <div>
+            <nav>
+                <a href="./index.html">Inicio</a>
+                <a href="./SobreNosotros.html">Sobre Nosotros</a>
+                <a href="./SobreNosotros.html">Contacto</a>
+            </nav>
+            <button class="cart-button" onclick="location.href='./DetalleProducto.html'">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="store-search">
+
+            <h1>Nuestro Catálogo de Amigurumis</h1>
+
+            <form action="">
+                <div class="search-bar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+                    <input type="text" placeholder="Buscar tu amigurumi favorito...">
+                </div>
+                
+                <div class="filter-options">
+                    <select name="personajes" id="personaje-select">
+                        <option value="">Tipo de personaje</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="hamster">Hamster</option>
+                    </select>
+                    <select name="colecciones" id="coleccion-select">
+                        <option value="">Colección</option>
+                        <option value="animales">Animales</option>
+                        <option value="pesonajes">Personajes</option>
+                        <option value="cosas">Cosas</option>
+                    </select>
+                </div>
+            </form>
+        </section>
+
+        <section class="product-grid">
+            <article class="product-card">
+                <img src="./zorro.jpeg" alt="Zorro de peluche">
+                <h3>Zorro de Peluche</h3>
+                <p>Precio: $25.00</p>
+            </article>
+            <article class="product-card">
+                <img src="./elefante.jpeg" alt="Elefante de peluche">
+                <h3>Elefante de Peluche</h3>
+                <p>Precio: $30.00</p>
+            </article>
+            <article class="product-card">
+                <img src="./casahongo.jpeg" alt="Casas en forma de Hongo">
+                <h3>Casa en forma de Hongo</h3>
+                <p>Precio: $30.00</p>
+            </article>
+            <article class="product-card">
+                <img src="./astronauta.jpeg" alt="Astronauta de peluche">
+                <h3>Astronauta de peluche</h3>
+                <p>Precio: $35.00</p>
+            </article>
+        </section>
+
+        <nav class="pagination">
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
+            </a>
+            <a class="is-active" href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <a href="">5</a>
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
+            </a>
+        </nav>
+
+    </main>
+
+    <footer class="footer">
+        <p> &copy; 2025 Amigurumis. Todos los derechos reservados.</p>
+        <div class="social-links">
+            <a href="">Facebook</a>
+            <a href="">Instagram</a>
+            <a href="">Twitter</a>
+        </div>
+    </footer>
+    
+</body>
+</html>
